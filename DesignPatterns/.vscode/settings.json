@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
-        "src",
-        "Assignment1/src"
+        "Assignment2/src",
+        "Assignment1/src",
+        "Assignment3"
     ]
 }
