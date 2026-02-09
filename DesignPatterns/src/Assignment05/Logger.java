@@ -37,7 +37,7 @@ public class Logger {
     public void setFileName(String newFileName) {
         try {
             if (writer != null) {
-                writer.close();
+                writer.close(); // Close the current file before switching
             }
             this.fileName = newFileName;
             openFile();
@@ -52,6 +52,8 @@ public class Logger {
                 writer.write(message);
                 writer.newLine();
                 writer.flush(); // Makes sure the message actually hits the disk
+                // even if its cached in memory
+                //otherwise we might lose logs if the program crashes
             }
         } catch (IOException e) {
             System.err.println("Failed to write log: " + e.getMessage());
