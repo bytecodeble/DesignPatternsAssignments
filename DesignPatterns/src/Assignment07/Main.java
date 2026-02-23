@@ -22,7 +22,6 @@ public class Main {
         if (character.getStateName().equals("Master")) {
             System.out.println("Congratulations! You won the game!");
             System.exit(0);
-        
         }
     }
 }

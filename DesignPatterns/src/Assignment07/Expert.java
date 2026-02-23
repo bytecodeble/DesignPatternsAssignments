@@ -19,7 +19,7 @@ public class Expert extends State{
     @Override
     public void fight() {
         character.addExp(40);
-        character.addHp(-30);
+        character.addHp(-60);
         checkHP();
         checkLevelUp();
     }
