@@ -10,7 +10,7 @@ public abstract class State {
 
     public abstract void train();
     public void meditate() {
-        System.out.println("Haven't learnt how to heal...");
+        System.out.println("Haven't learnt how to meditate...");
     }
     public void fight() {
         System.out.println("Haven't learnt how to fight...");
